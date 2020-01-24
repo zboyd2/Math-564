@@ -16,16 +16,13 @@
 % x'
 % plot(x)
 % 
-% % get the eigenvalues
-% d = sqrt(b^2 + 4*a);
-% ( b + d ) / 2
-% ( b - d ) / 2
 
 % % second-order system
-%x0 = [1;1];
-x0 = -V(:,1);
+x0 = [1;1];
+%x0 = -V(:,1);
 M = [1 1; 1 0];
 N = 20;
+
 x = zeros(2,N);
 x(:,1)=x0;
 
